@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Tree from "react-d3-tree";
 
-const CLIENT_ID = "109449587824-6suqjt71pou46ffpr8bjdo2ovn5jcsg6.apps.googleusercontent.com";
-const API_KEY = "AIzaSyBm33MmgVHFCUxJLp4cbLB9GIvZYkLC4k4";
+const CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const SCOPES = "https://www.googleapis.com/auth/drive.readonly";
 const DISCOVERY_DOC = "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest";
 
